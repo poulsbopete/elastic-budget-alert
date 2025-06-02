@@ -1,18 +1,20 @@
 
-``# 💸 Elastic Cloud Budget Alert Script This simple shell script monitors your Elastic Cloud usage and warns you when you're within 20% of a defined monthly budget. Great for cost-conscious teams who want early warnings before the invoice shock hits.
+# 💸 Elastic Cloud Budget Alert Script 
+This simple shell script monitors your Elastic Cloud usage and warns you when you're within 20% of a defined monthly budget. Great for cost-conscious teams who want early warnings before the invoice shock hits.
 
---- ## 🚀 Features - Pulls current usage cost from Elastic Cloud API - Compares usage against a monthly budget - Warns if you're within 20% of the threshold - Reads API keys and config from a `.env` file (so you keep secrets safe)
+## 🚀 Features - 
+Pulls current usage cost from Elastic Cloud API - Compares usage against a monthly budget - Warns if you're within 20% of the threshold - Reads API keys and config from a `.env` file (so you keep secrets safe)
 
---- ## 🧰 Requirements - Bash (Linux/macOS) - `jq` (for parsing JSON) - `bc` (for math)
+## 🧰 Requirements - 
+Bash (Linux/macOS) - `jq` (for parsing JSON) - `bc` (for math)
 
 Install requirements if needed:
 
-```bash
-sudo apt install jq bc   # Debian/Ubuntu`` 
+```sudo apt install jq bc   # Debian/Ubuntu``` 
 
-* * *
 
-📦 Setup
+
+# 📦 Setup
 --------
 
 ### 1\. Clone the Repo
@@ -33,7 +35,7 @@ MAX_BUDGET=100.00`
 
 * * *
 
-▶️ Usage
+# ▶️ Usage
 --------
 
 Make the script executable and run it:
@@ -48,9 +50,9 @@ pgsql
 `📊 Current Cost: $82.50 🎯 Alert Threshold: $80.00 (80% of $100.00)
 🚨 Warning: You are within 20% of your monthly budget!` 
 
-* * *
 
-🕒 Automate with Cron
+
+# 🕒 Automate with Cron
 ---------------------
 
 To check daily, add this to your crontab:
@@ -93,21 +95,21 @@ git push -u origin main`
 
 * * *
 
-🤝 Contributing
+## 🤝 Contributing
 ---------------
 
 Pull requests welcome! If you'd like to add Slack alerts, email, or Elastic ingestion, open an issue or PR.
 
 * * *
 
-📄 License
+## 📄 License
 ----------
 
 MIT
 
 * * *
 
-🧠 Credits
+## 🧠 Credits
 ----------
 
 Built with 💡 and a little paranoia about cloud billing.
